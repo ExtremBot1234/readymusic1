@@ -20,8 +20,8 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1";
-var adminprefix = '1'
+const prefix = "R";
+var adminprefix = 'R'
 /////////////////////////
 ////////////////////////
 
@@ -344,7 +344,7 @@ client.on('message', message => {
 });
 
 
-const developers = ["472413769700474901"]
+const developers = ["367384433415946262"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
